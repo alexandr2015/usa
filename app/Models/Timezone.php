@@ -31,4 +31,9 @@ class Timezone extends Model
     {
         return $this->hasMany(City::class);
     }
+
+    public function rules()
+    {
+        return $this->hasMany(Rules::class);
+    }
 }

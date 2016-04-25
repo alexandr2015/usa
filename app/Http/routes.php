@@ -25,5 +25,10 @@ Route::group([
             'edit',
         ]
     ]);
+
+    Route::get('search/{postCode}', [
+        'as' => 'search',
+        'uses' => 'SearchController@search',
+    ]);
 });
 
