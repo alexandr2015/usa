@@ -2,50 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68b15e51-fda5-4647-b56a-fe7d3235420d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Repositories/ZipCodeRepository.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/SearchRequest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Repositories/RulesDatesRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Exceptions/ApiException.php" afterPath="$PROJECT_DIR$/app/Exceptions/ApiException.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Helpers/DateHelper.php" afterPath="$PROJECT_DIR$/app/Helpers/DateHelper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/SearchController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/SearchController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/StateController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/StateController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/TempController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/TempController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/BaseRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/BaseRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Requests/StateRequest.php" afterPath="$PROJECT_DIR$/app/Http/Requests/StateRequest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/City.php" afterPath="$PROJECT_DIR$/app/Models/City.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Country.php" afterPath="$PROJECT_DIR$/app/Models/Country.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/County.php" afterPath="$PROJECT_DIR$/app/Models/County.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Rules.php" afterPath="$PROJECT_DIR$/app/Models/Rules.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/RulesDates.php" afterPath="$PROJECT_DIR$/app/Models/RulesDates.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/State.php" afterPath="$PROJECT_DIR$/app/Models/State.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Timezone.php" afterPath="$PROJECT_DIR$/app/Models/Timezone.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Usa.php" afterPath="$PROJECT_DIR$/app/Models/Usa.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/BaseRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/BaseRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/CityRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/CityRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/StateRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/StateRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/TimeZonesRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/TimeZonesRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_25_065028_create_country_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_25_065028_create_country_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_25_065144_create_state_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_25_065144_create_state_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_25_065200_create_county_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_25_065200_create_county_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_25_072001_create_timezone_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_25_072001_create_timezone_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_25_073000_create_city_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_25_073000_create_city_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_25_165148_create_rules_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_25_165148_create_rules_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2016_04_25_165730_create_rules_dates_table.php" afterPath="$PROJECT_DIR$/database/migrations/2016_04_25_165730_create_rules_dates_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/test_cities.sql" afterPath="$PROJECT_DIR$/database/test_cities.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/test_counties.sql" afterPath="$PROJECT_DIR$/database/test_counties.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/test_countries.sql" afterPath="$PROJECT_DIR$/database/test_countries.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/test_migrations.sql" afterPath="$PROJECT_DIR$/database/test_migrations.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/test_rules.sql" afterPath="$PROJECT_DIR$/database/test_rules.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/test_rules_dates.sql" afterPath="$PROJECT_DIR$/database/test_rules_dates.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/test_states.sql" afterPath="$PROJECT_DIR$/database/test_states.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/test_timezones.sql" afterPath="$PROJECT_DIR$/database/test_timezones.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/test_usa.sql" afterPath="$PROJECT_DIR$/database/test_usa.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/usa.sql" afterPath="$PROJECT_DIR$/usa.sql" />
     </list>
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,7 +43,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SearchController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SearchController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SearchController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="201">
@@ -121,7 +80,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RulesDatesRepository.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RulesDatesRepository.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Repositories/RulesDatesRepository.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
@@ -489,7 +448,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1461349362733</updated>
-      <workItem from="1461649007358" duration="14723000" />
+      <workItem from="1461649007358" duration="14979000" />
     </task>
     <task id="LOCAL-00001" summary="fist commit">
       <created>1461605770387</created>
@@ -498,11 +457,18 @@
       <option name="project" value="LOCAL" />
       <updated>1461605770387</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added search methods">
+      <created>1461667556853</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1461667556853</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14723000" />
+    <option name="totallyTimeSpent" value="14979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-4" width="1920" height="1084" extended-state="6" />
@@ -511,6 +477,7 @@
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21878335" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21824974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -520,7 +487,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -563,7 +529,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fist commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="fist commit" />
+    <MESSAGE value="added search methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="added search methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -649,6 +616,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1022,16 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/RulesDatesRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-          <folding>
-            <element signature="e#35#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/fb52407d/f5c37a47-ab9d-4c9a-a0de-510c4720ef44/test.cities">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1059,6 +1017,16 @@
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="e#40#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/RulesDatesRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <element signature="e#35#62#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
