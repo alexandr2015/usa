@@ -14,21 +14,21 @@ class StateRequest extends BaseRequest
     {
         $method = $this->method();
         if ($method == 'POST') {
-            return $this->createRules();
+            return $this->createState();
         } elseif ($method == "GET") {
-            return $this->updateRules();
+            return $this->updateState();
         }
 
     }
 
-    public function createRules()
+    public function createState()
     {
         return [
             'name' => 'required|string|unique:states',
         ];
     }
 
-    public function updateRules()
+    public function updateState()
     {
         return [
             'name' => 'required|string|unique:states,name,' . $this->segment(3),

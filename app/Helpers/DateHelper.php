@@ -140,4 +140,33 @@ class DateHelper
 
         return $response;
     }
+
+    public static function checkDate($date)
+    {
+        if (strlen($date) !== 10) {
+            return false;
+        }
+        try {
+            $year = substr($date, 0, 4);
+            $month = substr($date, 5, 2);
+            $day = substr($date, 8, 2);
+            return checkdate($month, $day, $year);
+        } catch (\Exception $e) {
+            return false;
+        }
+    }
+
+    public static function validatePeriods($dates, $date)
+    {
+        foreach ($dates as $item) {
+            if ($item['date_from'] < $date['date_from'] && $item['date_to'] > $date['date_from']) {
+                return false;
+            }
+            if ($item['date_from'] < $date['date_to'] && $item['date_to'] > $date['date_to']) {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }

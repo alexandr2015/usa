@@ -30,5 +30,10 @@ Route::group([
         'as' => 'search',
         'uses' => 'SearchController@search',
     ]);
+
+    Route::post('rules', [
+        'as' => 'create_rules',
+        'uses' => 'RulesController@create',
+    ]);
 });
 

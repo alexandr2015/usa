@@ -20,7 +20,7 @@ class RulesDatesRepository extends BaseRepository {
             } else {
                 $validDates = DateHelper::getPeriodForIncludeFalse($dates, $dateFrom, $dateTo);
             }
-            $response = DateHelper::getWeekDaysFromPeriods($validDates, $rule['weekdays']);
+            $response = array_merge(DateHelper::getWeekDaysFromPeriods($validDates, $rule['weekdays']), $response);;
         }
 
         return $response;

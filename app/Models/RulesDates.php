@@ -17,6 +17,12 @@ class RulesDates extends Model
         'include',
     ];
 
+    protected $fillable = [
+        'date_from',
+        'date_to',
+        'include',
+    ];
+
     protected $hidden = [
         'created_at',
         'updated_at',

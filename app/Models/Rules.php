@@ -19,6 +19,14 @@ class Rules extends Model
         'weekdays',
     ];
 
+    protected $fillable = [
+        'location',
+        'state_id',
+        'timezone_id',
+        'all_year',
+        'weekdays',
+    ];
+
     protected $hidden = [
         'created_at',
         'updated_at',
