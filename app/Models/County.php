@@ -29,4 +29,9 @@ class County extends Model
     {
         return $this->hasMany(City::class);
     }
+
+    public function state()
+    {
+        return $this->belongsTo(State::class);
+    }
 }

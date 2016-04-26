@@ -29,13 +29,19 @@ class Rules extends Model
         'all_year' => 'boolean',
     ];
 
+
     public function rules_dates()
     {
-        return $this->belongsTo(RulesDates::class);
+        return $this->hasMany(RulesDates::class);
     }
 
-    public function getWeekdaysAttribute($value)
+    public function timezone()
     {
-        return DateHelper::getWeekDayByNumber($value[0]) . '-' . DateHelper::getWeekDayByNumber($value[2]);
+        return $this->hasOne(Timezone::class);
+    }
+
+    public function state()
+    {
+        return $this->hasOne(State::class);
     }
 }

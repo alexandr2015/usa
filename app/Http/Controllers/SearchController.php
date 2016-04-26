@@ -2,24 +2,54 @@
 
 namespace App\Http\Controllers;
 
-use App\Repositories\CityRepository;
-use Illuminate\Http\Request;
-
-use App\Http\Requests;
+use App\Helpers\DateHelper;
+use App\Models\City;
+use App\Repositories\RulesDatesRepository;
+use App\Http\Requests\SearchRequest;
+use Symfony\Component\HttpFoundation\Response;
 
 class SearchController extends Controller
 {
-    protected $cityRepository;
+    protected $rulesDatesRepository;
 
-    public function __construct(CityRepository $cityRepository)
+    public function __construct(RulesDatesRepository $rulesDatesRepository)
     {
-        $this->cityRepository = $cityRepository;
+        $this->rulesDatesRepository = $rulesDatesRepository;
     }
 
-    public function search($postCode)
+    public function search(SearchRequest $request, City $city)
     {
-        $city = $this->cityRepository->findBy('zipcode', $postCode);
+        $dateFrom = $request->get('day_from');
+        $dateTo = $request->get('day_to');
+        $rule = $city->timezone->rule;
+        if (!$rule) {
+            $rule = $city->county->state->rule;
+            if (!$rule) {
+                return response()->json([
+                    'success' => true,
+                    'dates' => DateHelper::getWeekDaysFromPeriods([
+                        [$dateFrom, $dateTo]
+                    ]),
+                ]);
+            }
+        }
+        $rulesDates = $rule->rules_dates;
+        if ($rulesDates->isEmpty()) {
+            if ($rule->all_year) {
+                return response()->json([
+                    'success' => true,
+                    'dates' => DateHelper::getWeekDaysFromPeriods([
+                        [$dateFrom, $dateTo]
+                    ]),
+                ]);
+            }
+        }
 
-        return response()->json($city);
+        $response = $this->rulesDatesRepository->periods($rulesDates, $rule, $dateFrom, $dateTo);
+
+        return response()->json([
+            'success' => true,
+            'dates' => $response,
+        ], Response::HTTP_OK);
     }
 }

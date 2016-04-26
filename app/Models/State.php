@@ -44,8 +44,8 @@ class State extends Model
         return $this->belongsTo(Country::class);
     }
 
-    public function rules()
+    public function rule()
     {
-        return $this->hasMany(Rules::class);
+        return $this->hasOne(Rules::class);
     }
 }

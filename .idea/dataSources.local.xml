@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="MySQL - test@localhost" uuid="8af9ae6c-3e48-4fb2-925d-a671f5dfb77c">
+    <data-source name="MySQL - test@localhost" uuid="f5c37a47-ab9d-4c9a-a0de-510c4720ef44">
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
       <schema-pattern>test.*</schema-pattern>

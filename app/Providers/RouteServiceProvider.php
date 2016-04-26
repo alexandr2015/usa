@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
-use App\Models\State;
+use App\Exceptions\ApiException;
+use App\Models\City;
+use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
@@ -25,8 +27,16 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot(Router $router)
     {
-        //s
         parent::boot($router);
+
+        $router->bind('zipCode', function ($value) {
+            $model = City::where('zipcode', '=', $value)->first();
+            if (!$model) {
+                throw new ApiException('zipcode not found', Response::HTTP_NOT_FOUND);
+            }
+
+            return $model;
+        });
     }
 
     /**

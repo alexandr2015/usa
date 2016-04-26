@@ -10,6 +10,7 @@ class RulesDates extends Model
     use SoftDeletes;
 
     protected $visible = [
+        'id',
         'rules_id',
         'date_from',
         'date_to',
@@ -23,7 +24,7 @@ class RulesDates extends Model
     ];
 
     protected $casts = [
-        'include',
+        'include' => 'boolean',
     ];
 
     public function rule()

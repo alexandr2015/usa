@@ -26,7 +26,7 @@ Route::group([
         ]
     ]);
 
-    Route::get('search/{postCode}', [
+    Route::get('search/{zipCode}', [
         'as' => 'search',
         'uses' => 'SearchController@search',
     ]);
